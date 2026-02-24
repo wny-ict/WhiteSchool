@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อเรา - โครงการสถานศึกษาสีขาว</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://tse2.mm.bing.net/th/id/OIP.yVXviOGLoqC2GoEBDzH6AgHaHZ?rs=1&pid=ImgDetMain&o=7&rm=3" type="image/x-icon">
+    <style>
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .contact-info-list {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+        }
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .info-icon {
+            color: var(--primary-yellow);
+            font-size: 1.4rem;
+            margin-right: 20px;
+            margin-top: 2px;
+            flex-shrink: 0;
+            width: 30px;
+            text-align: center;
+        }
+        .info-content h3 {
+            font-size: 1.15rem;
+            color: var(--text-main);
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        .info-content p {
+            color: var(--text-muted);
+            margin-top: 5px;
+            line-height: 1.6;
+        }
+        .contact-map {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            min-height: 400px;
+            background-color: #eee;
+            position: relative;
+        }
+        /* Placeholder for actual map */
+        .contact-map::after {
+            content: "แผนที่โรงเรียน (Google Maps)";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #666;
+            font-weight: 500;
+        }
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+        .social-btn:hover {
+            background-color: var(--primary-yellow);
+            color: white;
+            border-color: var(--primary-yellow);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        โรงเรียนวังน้ำเย็นวิทยาคม สำนักงานเขตพื้นที่การศึกษามัธยมศึกษาสระแก้ว
+    </div>
+
+    <!-- Navigation included via script for consistency -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <div style="width: 50px; height: 50px; background-color: var(--primary-yellow); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-main);">
+                    <i class="fas fa-map-marker-alt" style="font-size: 1.25rem;"></i>
+                </div>
+                <div class="site-title">
+                    <h1>โครงการสถานศึกษาสีขาวฯ ระดับเพชร</h1>
+                    <p>ปีการศึกษา 2568</p>
+                </div>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">ข้อมูลพื้นฐาน <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="about.html">ประวัติและข้อมูลพื้นฐาน</a>
+                        <a href="committee.html">คณะกรรมการดำเนินงาน</a>
+                        <a href="documents.html">เอกสารดาวน์โหลด</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">มาตรการ 5 ด้าน <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="prevention.html">1. ด้านการป้องกัน</a>
+                        <a href="search.html">2. ด้านการค้นหา</a>
+                        <a href="treatment.html">3. ด้านการรักษา</a>
+                        <a href="monitoring.html">4. ด้านการเฝ้าระวัง</a>
+                        <a href="management.html">5. ด้านการบริหารจัดการ</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">ผลงาน/สื่อ <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="awards.html">เกียรติบัตรและผลงาน</a>
+                        <a href="innovation.html">นวัตกรรม</a>
+                        <a href="learning.html">แหล่งเรียนรู้ต้านยาเสพติด</a>
+                        <a href="sema-box.html">ตู้เสมารักษ์ออนไลน์</a>
+                    </div>
+                </li>
+                <li><a href="performance.html">ผลการดำเนินงาน</a></li>
+                <li><a href="contact.html">ติดต่อเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>ติดต่อเรา</h1>
+        <p>สอบถามข้อมูลเพิ่มเติม หรือแจ้งเบาะแสเกี่ยวกับยาเสพติดและอบายมุข</p>
+    </div>
+
+    <section class="content-section">
+        <h2 style="color: var(--dark-yellow); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 30px;">ช่องทางการติดต่อ</h2>
+
+        <div class="contact-container" style="margin-top: 0;">
+            <!-- Contact Info -->
+            <div class="contact-info-list" style="padding: 0; box-shadow: none;">
+                
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-map-pin"></i></div>
+                    <div class="info-content">
+                        <h3>ที่อยู่สถานศึกษา</h3>
+                        <p style="font-size: 1.15rem;">โรงเรียนวังน้ำเย็นวิทยาคม<br>เลขที่ [XX] หมู่ [XX] ตำบลวังน้ำเย็น<br>อำเภอวังน้ำเย็น จังหวัดสระแก้ว 27210</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="info-content">
+                        <h3>โทรศัพท์ติดต่อ</h3>
+                        <p style="font-size: 1.15rem;">ฝ่ายบริหารทั่วไป: 037-XXX-XXX<br>ฝ่ายกิจการนักเรียน: 037-XXX-XXX</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="info-content">
+                        <h3>อีเมล (E-mail)</h3>
+                        <p style="font-size: 1.15rem;">info@wny.ac.th<br>whiteschool@wny.ac.th</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border-color);">
+                    <h3 style="color: var(--text-main); margin-bottom: 15px;">ติดตามข่าวสารออนไลน์</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-line"></i></a>
+                        <a href="#" class="social-btn"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Map Embed -->
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.586119854746!2d102.16887047602325!3d13.521595186847255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311b5bea71166811%3A0x58df8fe3cd207ba8!2z4LmC4Lij4LiH4LmA4Lij4Li14Lii4LiZ4Lin4Lix4LiH4LiZ4LmJ4Liz4LmA4Lii4LmH4LiZ4Lin4Li04LiX4Lii4Liy4LiE4Lih!5e0!3m2!1sth!2sth!4v1700000000000!5m2!1sth!2sth" width="100%" height="100%" style="border:0; position: absolute; top:0; left:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>รายงานผลการปฏิบัติงาน โครงการสถานศึกษาสีขาว ปลอดยาเสพติดและอบายมุข ระดับเพชร</p>
+        <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 5px;">&copy; 2025 Wangnamyenwittayakhom School | Designed and Developed by: Kru Panittha Boonyong</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="update_nav_runtime.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ด้านการป้องกัน - โครงการสถานศึกษาสีขาว</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://tse2.mm.bing.net/th/id/OIP.yVXviOGLoqC2GoEBDzH6AgHaHZ?rs=1&pid=ImgDetMain&o=7&rm=3" type="image/x-icon">
+</head>
+<body>
+    <div class="top-bar">
+        โรงเรียนวังน้ำเย็นวิทยาคม สำนักงานเขตพื้นที่การศึกษามัธยมศึกษาสระแก้ว
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <div style="width: 50px; height: 50px; background-color: var(--primary-yellow); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-main);">
+                    <i class="fas fa-shield-alt" style="font-size: 1.25rem;"></i>
+                </div>
+                <div class="site-title">
+                    <h1>โครงการสถานศึกษาสีขาวฯ ระดับเพชร</h1>
+                    <p>ปีการศึกษา 2568</p>
+                </div>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">ข้อมูลพื้นฐาน <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="about.html">ประวัติและข้อมูลพื้นฐาน</a>
+                        <a href="committee.html">คณะกรรมการดำเนินงาน</a>
+                        <a href="documents.html">เอกสารดาวน์โหลด</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">มาตรการ 5 ด้าน <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="prevention.html">1. ด้านการป้องกัน</a>
+                        <a href="search.html">2. ด้านการค้นหา</a>
+                        <a href="treatment.html">3. ด้านการรักษา</a>
+                        <a href="monitoring.html">4. ด้านการเฝ้าระวัง</a>
+                        <a href="management.html">5. ด้านการบริหารจัดการ</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">ผลงาน/สื่อ <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="awards.html">เกียรติบัตรและผลงาน</a>
+                        <a href="innovation.html">นวัตกรรม</a>
+                        <a href="learning.html">แหล่งเรียนรู้ต้านยาเสพติด</a>
+                        <a href="sema-box.html">ตู้เสมารักษ์ออนไลน์</a>
+                    </div>
+                </li>
+                <li><a href="performance.html">ผลการดำเนินงาน</a></li>
+                <li><a href="contact.html">ติดต่อเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>ด้านที่ 1 มาตรการป้องกัน</h1>
+        <p>การจัดกิจกรรมเพื่อเสริมสร้างภูมิคุ้มกันและป้องกันการใช้ยาเสพติดและอบายมุขในสถานศึกษา</p>
+    </div>
+
+    <style>
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .activity-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .activity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+        .activity-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--primary-yellow);
+        }
+        .activity-content {
+            padding: 25px 20px;
+        }
+        .activity-topic {
+            color: var(--primary-red);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: inline-block;
+            background-color: var(--light-red);
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+        .activity-title {
+            color: var(--text-main);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .activity-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+    </style>
+
+    <section class="content-section">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid var(--border-color); padding-bottom: 15px; margin-bottom: 30px;">
+            <h2 style="color: var(--dark-yellow); margin: 0;">ภาพกิจกรรมและหลักฐานเชิงประจักษ์</h2>
+            <a href="#" class="btn-download" style="margin: 0;"><i class="fas fa-file-pdf"></i> ดาวน์โหลดรายงานเต็ม (PDF)</a>
+        </div>
+        
+        <div class="activity-grid">
+            <!-- Activity 1 -->
+            <div class="activity-card">
+                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=800&auto=format&fit=crop" alt="กิจกรรมโฮมรูม" class="activity-img">
+                <div class="activity-content">
+                    <span class="activity-topic">1.1 กิจกรรมโฮมรูม (Homeroom)</span>
+                    <h3 class="activity-title">การให้คำปรึกษาและเสริมสร้างภูมิคุ้มกัน</h3>
+                    <p class="activity-desc">คุณครูที่ปรึกษาจัดกิจกรรมโฮมรูมประจำวัน เพื่อพูดคุย ให้คำปรึกษา และสอดแทรกความรู้เรื่องพิษภัยของยาเสพติดให้กับนักเรียนอย่างใกล้ชิด</p>
+                </div>
+            </div>
+
+            <!-- Activity 2 -->
+            <div class="activity-card">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800&auto=format&fit=crop" alt="ห้องเรียนสีขาว" class="activity-img">
+                <div class="activity-content">
+                    <span class="activity-topic">1.2 โครงการห้องเรียนสีขาว</span>
+                    <h3 class="activity-title">โครงสร้างแกนนำนักเรียน 4 ฝ่าย</h3>
+                    <p class="activity-desc">การจัดตั้งคณะกรรมการนักเรียนประจำห้องเรียน (ฝ่ายการเรียน, ฝ่ายการงาน, ฝ่ายกิจกรรม, ฝ่ายสารวัตรนักเรียน) เพื่อดูแลช่วยเหลือกันเอง</p>
+                </div>
+            </div>
+
+            <!-- Activity 3 -->
+            <div class="activity-card">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop" alt="กิจกรรมจิตอาสา" class="activity-img">
+                <div class="activity-content">
+                    <span class="activity-topic">1.3 กิจกรรมลูกเสือ-จิตอาสา</span>
+                    <h3 class="activity-title">บำเพ็ญประโยชน์ต่อสังคมและชุมชน</h3>
+                    <p class="activity-desc">ส่งเสริมให้นักเรียนใช้เวลาว่างให้เป็นประโยชน์ ผ่านกิจกรรมจิตอาสาพัฒนาโรงเรียนและชุมชน สร้างความตระหนักรู้ในคุณค่าของตนเอง</p>
+                </div>
+            </div>
+
+            <!-- Activity 4 -->
+            <div class="activity-card">
+                <img src="https://images.unsplash.com/photo-1560780552-ba54683cb263?q=80&w=800&auto=format&fit=crop" alt="สื่อรณรงค์" class="activity-img">
+                <div class="activity-content">
+                    <span class="activity-topic">1.4 ป้ายนิเทศและสื่อรณรงค์</span>
+                    <h3 class="activity-title">นิทรรศการให้ความรู้ต้านยาเสพติด</h3>
+                    <p class="activity-desc">การจัดทำป้ายนิเทศ แผ่นพับ และสื่อให้ความรู้บริเวณจุดต่างๆ ในโรงเรียน เพื่อรณรงค์ให้นักเรียนตระหนักถึงอันตรายของยาเสพติดและอบายมุข</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>รายงานผลการปฏิบัติงาน โครงการสถานศึกษาสีขาว ปลอดยาเสพติดและอบายมุข ระดับเพชร</p>
+        <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 5px;">&copy; 2025 Wangnamyenwittayakhom School | Designed and Developed by: Kru Panittha Boonyong</p>
+
+    <script src="script.js"></script>
+</body>
+</html>

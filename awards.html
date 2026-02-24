@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกียรติบัตรและรางวัล - โครงการสถานศึกษาสีขาว</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://tse2.mm.bing.net/th/id/OIP.yVXviOGLoqC2GoEBDzH6AgHaHZ?rs=1&pid=ImgDetMain&o=7&rm=3" type="image/x-icon">
+    <style>
+        .award-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .award-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+        .award-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+        .award-img-wrapper {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 3px solid var(--primary-red);
+        }
+        .award-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .award-card:hover .award-img-wrapper img {
+            transform: scale(1.05);
+        }
+        .award-info {
+            padding: 20px;
+            text-align: center;
+        }
+        .award-year {
+            display: inline-block;
+            background-color: var(--light-red);
+            color: var(--dark-red);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .award-title {
+            color: var(--text-main);
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .award-org {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        โรงเรียนวังน้ำเย็นวิทยาคม สำนักงานเขตพื้นที่การศึกษามัธยมศึกษาสระแก้ว
+    </div>
+
+    <!-- Navigation included via script for consistency -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <div style="width: 50px; height: 50px; background-color: var(--primary-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                    <i class="fas fa-trophy" style="font-size: 1.25rem;"></i>
+                </div>
+                <div class="site-title">
+                    <h1>โครงการสถานศึกษาสีขาวฯ ระดับเพชร</h1>
+                    <p>ปีการศึกษา 2568</p>
+                </div>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">ข้อมูลพื้นฐาน <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="about.html">ประวัติและข้อมูลพื้นฐาน</a>
+                        <a href="committee.html">คณะกรรมการดำเนินงาน</a>
+                        <a href="documents.html">เอกสารดาวน์โหลด</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">มาตรการ 5 ด้าน <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="prevention.html">1. ด้านการป้องกัน</a>
+                        <a href="search.html">2. ด้านการค้นหา</a>
+                        <a href="treatment.html">3. ด้านการรักษา</a>
+                        <a href="monitoring.html">4. ด้านการเฝ้าระวัง</a>
+                        <a href="management.html">5. ด้านการบริหารจัดการ</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">ผลงาน/สื่อ <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="awards.html">เกียรติบัตรและผลงาน</a>
+                        <a href="innovation.html">นวัตกรรม</a>
+                        <a href="learning.html">แหล่งเรียนรู้ต้านยาเสพติด</a>
+                        <a href="sema-box.html">ตู้เสมารักษ์ออนไลน์</a>
+                    </div>
+                </li>
+                <li><a href="performance.html">ผลการดำเนินงาน</a></li>
+                <li><a href="contact.html">ติดต่อเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-header" style="background: linear-gradient(135deg, var(--dark-red) 0%, var(--primary-red) 100%);">
+        <h1>เกียรติบัตรและผลงานดีเด่น</h1>
+        <p>ความสำเร็จและความภาคภูมิใจของโรงเรียนในการขับเคลื่อนโครงการสถานศึกษาสีขาว ปลอดยาเสพติดและอบายมุข</p>
+    </div>
+
+    <section class="content-section" style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
+        <div style="text-align: center; margin-bottom: 20px;">
+            <p style="font-size: 1.2rem; color: var(--text-main); max-width: 800px; margin: 0 auto;">ผลการดำเนินงานที่ผ่านมา แสดงให้เห็นถึงความมุ่งมั่นและความร่วมมือของทุกภาคส่วน ทั้งผู้บริหาร คณะครู นักเรียน ผู้ปกครอง และชุมชน ในการสร้างสรรค์สถานศึกษาที่ปลอดภัย</p>
+            <div style="width: 80px; height: 4px; background-color: var(--primary-red); margin: 20px auto; border-radius: 2px;"></div>
+        </div>
+
+        <div class="award-grid">
+            <!-- Award 1 -->
+            <div class="award-card">
+                <div class="award-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1594122230689-45899d9e6f69?q=80&w=600&auto=format&fit=crop" alt="ใบประกาศเกียรติคุณ ระดับทอง">
+                </div>
+                <div class="award-info">
+                    <span class="award-year">ปีการศึกษา 2566</span>
+                    <h3 class="award-title">สถานศึกษาสีขาว ปลอดยาเสพติดและอบายมุข ระดับทอง</h3>
+                    <p class="award-org">กระทรวงศึกษาธิการ</p>
+                </div>
+            </div>
+            
+            <!-- Award 2 -->
+            <div class="award-card">
+                <div class="award-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1594122230689-45899d9e6f69?q=80&w=600&auto=format&fit=crop" style="filter: hue-rotate(180deg);" alt="ใบประกาศเกียรติคุณ ระดับเงิน">
+                </div>
+                <div class="award-info">
+                    <span class="award-year">ปีการศึกษา 2565</span>
+                    <h3 class="award-title">สถานศึกษาสีขาว ปลอดยาเสพติดและอบายมุข ระดับเงิน</h3>
+                    <p class="award-org">สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน</p>
+                </div>
+            </div>
+
+            <!-- Award 3 -->
+            <div class="award-card">
+                <div class="award-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1523580494112-071d4581a59c?q=80&w=600&auto=format&fit=crop" alt="โล่เกียรติยศ เสมา ป.ป.ส.">
+                </div>
+                <div class="award-info">
+                    <span class="award-year">ปีการศึกษา 2564</span>
+                    <h3 class="award-title">โล่และประกาศเกียรติคุณ โครงการเสมา ป.ป.ส. ดีเด่น</h3>
+                    <p class="award-org">สำนักงาน ป.ป.ส.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>รายงานผลการปฏิบัติงาน โครงการสถานศึกษาสีขาว ปลอดยาเสพติดและอบายมุข ระดับเพชร</p>
+        <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 5px;">&copy; 2025 Wangnamyenwittayakhom School | Designed and Developed by: Kru Panittha Boonyong</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="update_nav_runtime.js"></script>
+</body>
+</html>

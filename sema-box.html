@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตู้เสมารักษ์ออนไลน์ - ศูนย์รับแจ้งเหตุ โรงเรียนวังน้ำเย็นวิทยาคม</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://tse2.mm.bing.net/th/id/OIP.yVXviOGLoqC2GoEBDzH6AgHaHZ?rs=1&pid=ImgDetMain&o=7&rm=3" type="image/x-icon">
+</head>
+<body>
+    <div class="top-bar">
+        โรงเรียนวังน้ำเย็นวิทยาคม สำนักงานเขตพื้นที่การศึกษามัธยมศึกษาสระแก้ว
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <div style="width: 50px; height: 50px; background-color: var(--primary-yellow); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-main);">
+                    <i class="fas fa-bullhorn" style="font-size: 1.25rem;"></i>
+                </div>
+                <div class="site-title">
+                    <h1>โครงการสถานศึกษาสีขาวฯ ระดับเพชร</h1>
+                    <p>ปีการศึกษา 2568</p>
+                </div>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">ข้อมูลพื้นฐาน <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="about.html">ประวัติและข้อมูลพื้นฐาน</a>
+                        <a href="committee.html">คณะกรรมการดำเนินงาน</a>
+                        <a href="documents.html">เอกสารดาวน์โหลด</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">มาตรการ 5 ด้าน <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="prevention.html">1. ด้านการป้องกัน</a>
+                        <a href="search.html">2. ด้านการค้นหา</a>
+                        <a href="treatment.html">3. ด้านการรักษา</a>
+                        <a href="monitoring.html">4. ด้านการเฝ้าระวัง</a>
+                        <a href="management.html">5. ด้านการบริหารจัดการ</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">ผลงาน/สื่อ <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="awards.html">เกียรติบัตรและผลงาน</a>
+                        <a href="innovation.html">นวัตกรรม</a>
+                        <a href="learning.html">แหล่งเรียนรู้ต้านยาเสพติด</a>
+                        <a href="sema-box.html">ตู้เสมารักษ์ออนไลน์</a>
+                    </div>
+                </li>
+                <li><a href="performance.html">ผลการดำเนินงาน</a></li>
+                <li><a href="contact.html">ติดต่อเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="page-header">
+            <h1>ตู้เสมารักษ์ออนไลน์ (Online Sema Rak Box)</h1>
+            <p>ระบบแจ้งเบาะแส รับเรื่องราวร้องทุกข์ ปัญหายาเสพติดและอบายมุขภายในสถานศึกษา ข้อมูลของท่านจะถูกเก็บเป็นความลับสูงสุด</p>
+        </section>
+
+        <section class="content-section">
+            <div class="form-container">
+                <div id="success-message" class="alert-success">
+                    <i class="fas fa-check-circle"></i> <strong>ส่งข้อมูลสำเร็จ!</strong> ขอบคุณสำหรับการแจ้งเบาะแส ข้อมูลของคุณมีความสำคัญอย่างยิ่งต่อการรักษาความปลอดภัยในสถานศึกษา
+                </div>
+                
+                <h3 style="margin-bottom: 20px; color: var(--dark-yellow); border-bottom: 2px solid var(--border-color); padding-bottom: 10px;">แบบฟอร์มแจ้งเบาะแส / ร้องเรียน</h3>
+                <!-- Web3Forms action URL. The actual submit is intercepted by JS to also send to Google Sheets. -->
+                <form id="semaForm" action="https://api.web3forms.com/submit" method="POST">
+                    
+                    <!-- Web3Forms Configuration Inputs -->
+                    <input type="hidden" name="access_key" value="ce077ef4-c787-4efa-be62-4f5b521ebd59">
+                    <input type="hidden" name="subject" value="แจ้งเบาะแสใหม่จาก ตู้เสมารักษ์ออนไลน์">
+                    <input type="hidden" name="from_name" value="ระบบตู้เสมารักษ์ออนไลน์">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    
+                    <div class="form-group">
+                        <label for="topic">หัวข้อที่ต้องการแจ้ง <span style="color: red;">*</span></label>
+                        <select id="topic" name="topic" class="form-control" required>
+                            <option value="">-- เลือกหัวข้อ --</option>
+                            <option value="ปัญหายาเสพติด">ปัญหายาเสพติด</option>
+                            <option value="ปัญหาบุหรี่ / บุหรี่ไฟฟ้า">ปัญหาบุหรี่ / บุหรี่ไฟฟ้า</option>
+                            <option value="ปัญหาการพนัน">ปัญหาการพนัน</option>
+                            <option value="การทะเลาะวิวาท / ความรุนแรง">การทะเลาะวิวาท / ความรุนแรง</option>
+                            <option value="ปัญหาอบายมุขอื่นๆ / อื่นๆ">ปัญหาอบายมุขอื่นๆ / อื่นๆ</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="details">รายละเอียดเหตุการณ์ <span style="color: red;">*</span></label>
+                        <textarea id="details" name="details" class="form-control" placeholder="โปรดระบุรายละเอียด เช่น วัน เวลา สถานที่ และบุคคลที่เกี่ยวข้องอย่างชัดเจน..." required></textarea>
+                    </div>
+                    
+                    <h4 style="margin-top: 30px; margin-bottom: 15px; color: var(--text-main);">ข้อมูลผู้แจ้ง (ไม่บังคับ - สามารถไม่ระบุตัวตนได้)</h4>
+                    
+                    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                        <div class="form-group" style="flex: 1; min-width: 250px;">
+                            <label for="informantName">ชื่อ-นามสกุล (ผู้แจ้ง)</label>
+                            <input type="text" id="informantName" name="informantName" class="form-control" placeholder="หากไม่ต้องการเปิดเผย สามารถเว้นว่างไว้ได้">
+                        </div>
+
+                        <div class="form-group" style="flex: 1; min-width: 250px;">
+                            <label for="contactInfo">ข้อมูลติดต่อกลับ (เบอร์โทร / อีเมล / Line)</label>
+                            <input type="text" id="contactInfo" name="contactInfo" class="form-control" placeholder="เพื่อสอบถามข้อมูลเพิ่มเติม (หากต้องการให้ติดต่อกลับ)">
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="margin-top: 20px;">
+                        <label style="display: flex; align-items: center; font-weight: normal; cursor: pointer;">
+                            <input type="checkbox" required style="margin-right: 10px; transform: scale(1.2);">
+                            ข้าพเจ้าขอยืนยันว่าข้อมูลที่แจ้งเป็นความจริงทุกประการ
+                        </label>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane" style="margin-right: 8px;"></i> ส่งข้อมูลแจ้งเหตุ
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>รายงานผลการปฏิบัติงาน โครงการสถานศึกษาสีขาว ปลอดยาเสพติดและอบายมุข ระดับเพชร</p>
+        <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 5px;">&copy; 2025 Wangnamyenwittayakhom School | Designed and Developed by: Kru Panittha Boonyong</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
